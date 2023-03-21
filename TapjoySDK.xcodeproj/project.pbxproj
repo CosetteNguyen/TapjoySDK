@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		244C7C8729CA1F9B00FED6C0 /* TapjoySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 244C7C8629CA1F9B00FED6C0 /* TapjoySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		244C7CA329CA202200FED6C0 /* Tapjoy.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244C7CA229CA202200FED6C0 /* Tapjoy.xcframework */; };
-		244C7CA429CA202200FED6C0 /* Tapjoy.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 244C7CA229CA202200FED6C0 /* Tapjoy.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		244C7CA929CA29E300FED6C0 /* TapjoySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244C7CA829CA29E300FED6C0 /* TapjoySDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,7 +18,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				244C7CA429CA202200FED6C0 /* Tapjoy.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -29,7 +27,7 @@
 /* Begin PBXFileReference section */
 		244C7C8329CA1F9B00FED6C0 /* TapjoySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TapjoySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		244C7C8629CA1F9B00FED6C0 /* TapjoySDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapjoySDK.h; sourceTree = "<group>"; };
-		244C7CA229CA202200FED6C0 /* Tapjoy.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Tapjoy.xcframework; sourceTree = "<group>"; };
+		244C7CA829CA29E300FED6C0 /* TapjoySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TapjoySDK.framework; path = Carthage/Build/iOS/TapjoySDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				244C7CA329CA202200FED6C0 /* Tapjoy.xcframework in Frameworks */,
+				244C7CA929CA29E300FED6C0 /* TapjoySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +70,7 @@
 		244C7CA129CA202100FED6C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				244C7CA229CA202200FED6C0 /* Tapjoy.xcframework */,
+				244C7CA829CA29E300FED6C0 /* TapjoySDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -293,6 +291,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -325,6 +327,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
