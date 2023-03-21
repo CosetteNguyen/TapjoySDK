@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		244C7C8729CA1F9B00FED6C0 /* TapjoySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 244C7C8629CA1F9B00FED6C0 /* TapjoySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		244C7CA929CA29E300FED6C0 /* TapjoySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244C7CA829CA29E300FED6C0 /* TapjoySDK.framework */; };
+		244C7CAB29CA2ADB00FED6C0 /* TapjoySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244C7CA829CA29E300FED6C0 /* TapjoySDK.framework */; };
+		244C7CAC29CA2ADB00FED6C0 /* TapjoySDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 244C7CA829CA29E300FED6C0 /* TapjoySDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,6 +19,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				244C7CAC29CA2ADB00FED6C0 /* TapjoySDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -35,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				244C7CA929CA29E300FED6C0 /* TapjoySDK.framework in Frameworks */,
+				244C7CAB29CA2ADB00FED6C0 /* TapjoySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
