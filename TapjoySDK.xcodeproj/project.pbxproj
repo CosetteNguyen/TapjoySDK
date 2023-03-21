@@ -8,11 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		244C7C8729CA1F9B00FED6C0 /* TapjoySDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 244C7C8629CA1F9B00FED6C0 /* TapjoySDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		244C7CA329CA202200FED6C0 /* Tapjoy.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244C7CA229CA202200FED6C0 /* Tapjoy.xcframework */; };
+		244C7CA429CA202200FED6C0 /* Tapjoy.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 244C7CA229CA202200FED6C0 /* Tapjoy.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		244C7CA529CA202200FED6C0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				244C7CA429CA202200FED6C0 /* Tapjoy.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		244C7C8329CA1F9B00FED6C0 /* TapjoySDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TapjoySDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		244C7C8629CA1F9B00FED6C0 /* TapjoySDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TapjoySDK.h; sourceTree = "<group>"; };
+		244C7CA229CA202200FED6C0 /* Tapjoy.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Tapjoy.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -20,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				244C7CA329CA202200FED6C0 /* Tapjoy.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -31,6 +49,7 @@
 			children = (
 				244C7C8529CA1F9B00FED6C0 /* TapjoySDK */,
 				244C7C8429CA1F9B00FED6C0 /* Products */,
+				244C7CA129CA202100FED6C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,6 +67,14 @@
 				244C7C8629CA1F9B00FED6C0 /* TapjoySDK.h */,
 			);
 			path = TapjoySDK;
+			sourceTree = "<group>";
+		};
+		244C7CA129CA202100FED6C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				244C7CA229CA202200FED6C0 /* Tapjoy.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,6 +99,7 @@
 				244C7C7F29CA1F9B00FED6C0 /* Sources */,
 				244C7C8029CA1F9B00FED6C0 /* Frameworks */,
 				244C7C8129CA1F9B00FED6C0 /* Resources */,
+				244C7CA529CA202200FED6C0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -268,6 +296,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -277,9 +306,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = poldi.TapjoySDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -296,6 +328,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,9 +338,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = poldi.TapjoySDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

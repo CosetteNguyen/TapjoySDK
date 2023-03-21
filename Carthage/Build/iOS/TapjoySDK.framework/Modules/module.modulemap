@@ -1,0 +1,6 @@
+framework module TapjoySDK {
+  umbrella header "TapjoySDK.h"
+
+  export *
+  module * { export * }
+}

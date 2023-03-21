@@ -1,0 +1,26 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "278b121d4da4f854796aa61249fda56a06a1bbca",
+  "iOS" : [
+    {
+      "hash" : "c239e5c6a2d7a426e71b912d1e8ff0e298126608000570b6d0d4a3f601f665d1",
+      "name" : "TapjoySDK",
+      "container" : "TapjoySDK.xcframework",
+      "identifier" : "ios-arm64"
+    },
+    {
+      "hash" : "009f190d0fcb5ec45813645b43f9f1e772be8e3b0c5987f957ca8ba8c74b587d",
+      "name" : "TapjoySDK",
+      "container" : "TapjoySDK.xcframework",
+      "identifier" : "ios-arm64_x86_64-simulator"
+    }
+  ]
+}
